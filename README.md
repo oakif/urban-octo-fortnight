@@ -3,7 +3,7 @@
 1. `cd ~/boss/testjobs/optimize`
 2. `grep nitrobenzene ~/boss/molecules/small/INDEX.txt`
 3. `cp ~/boss/molecules/small/nitrob.z .`
-4. `./xOPT nitrob`
+4. `./xOPT nitrob` or `./xOPTGB nitrob` for optimization with GB/SA hydration
 
 * `open out` to view results
 * `grep out "Optimized energy"`
