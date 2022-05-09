@@ -60,3 +60,25 @@ Find energy differences with changes in the dihedral angle in a molecule.
 * `x lrplte25` display simulation box
 * `open lrote25` see energies, %GTG
 * `open propout` properties including log P which is the partition of drugs in water vs cell membrane
+
+### Monte Carlo Gas (MCgas)
+
+Execute a gas-phase MC calculation
+
+1. `cd ~/boss/testjobs/MCgas`
+2. `grep "ethyl methyl ether" ~/boss/molecules/small/INDEX.txt`
+3. `cp ~/boss/molecules/small/emether.z .`
+4. `./xMCGAS emether`
+5. Wait
+
+* `open gasout` total energy is in the end, the first number in averages, check dihedral angel in %GTG
+* `open gas.pdb` trajectory
+
+### Monte Carlo Gas with GB/SA Solvation (MCGBSA)
+
+Execute a gas-phase MC calculation with GB/SA solvation added
+
+1. `cd ~/boss/testjobs/MCGBSA`
+2. `grep "ethyl methyl ether" ~/boss/molecules/small/INDEX.txt`
+3. `cp ~/boss/molecules/small/emether.z .`
+4. `./xMCGB emether`
