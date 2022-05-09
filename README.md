@@ -43,7 +43,7 @@ Find energy differences with changes in the dihedral angle in a molecule.
 
 * `open dih.csv` summary of dihedrals and energies
 
-### Monte Carlo Gas (MCgas)
+### Monte Carlo Gas Simulation (MCgas)
 
 Execute a gas-phase MC calculation
 
@@ -56,7 +56,7 @@ Execute a gas-phase MC calculation
 * `open gasout` total energy is in the end, the first number in averages, check dihedral angel in %GTG
 * `open gas.pdb` system in final state
 
-### Monte Carlo Gas with GB/SA Solvation (MCGBSA)
+### Monte Carlo Gas Simulation with GB/SA Solvation (MCGBSA)
 
 Execute a gas-phase MC calculation with GB/SA solvation added
 
