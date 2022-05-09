@@ -48,3 +48,15 @@ Find energy differences with changes in the dihedral angle in a molecule.
 8. `dih` or `csh dihcmd`
 
 * `open dih.csv` summary of dihedrals and energies
+
+### General Linear Response (linres)
+
+1. `cd ~/boss/testjobs/linres`
+2. `grep "ethyl methyl ether" ~/boss/molecules/small/INDEX.txt`
+3. `cp ~/boss/molecules/small/emether.z .`
+4. `./xLRCMPhere emether`
+5. `cd emether`
+
+* `x lrplte25` display simulation box
+* `open lrote25` see energies, %GTG
+* `open propout` properties including log P which is the partition of drugs in water vs cell membrane
