@@ -1,10 +1,4 @@
-* optimize, dihdrive, consearch, MCgas, MCGBSA, and linres.
-
-### General commands
-
-1. Find molecule: `grep nitrobenzene INDEX.txt`
-
-### Optimizze
+### Optimize
 
 1. `cd ~/boss/testjobs/optimize`
 2. `grep nitrobenzene ~/boss/molecules/small/INDEX.txt`
@@ -72,7 +66,7 @@ Execute a gas-phase MC calculation
 5. Wait
 
 * `open gasout` total energy is in the end, the first number in averages, check dihedral angel in %GTG
-* `open gas.pdb` trajectory
+* `open gas.pdb` system in final state
 
 ### Monte Carlo Gas with GB/SA Solvation (MCGBSA)
 
@@ -82,3 +76,6 @@ Execute a gas-phase MC calculation with GB/SA solvation added
 2. `grep "ethyl methyl ether" ~/boss/molecules/small/INDEX.txt`
 3. `cp ~/boss/molecules/small/emether.z .`
 4. `./xMCGB emether`
+5. Wait
+
+* `open gbout` total energy is in the end, the first number in averages, check dihedral angel in %GTG
