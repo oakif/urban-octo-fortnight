@@ -18,7 +18,9 @@ Output conformations of a molecule
 4. `./xCS100F etdiol`
 
 * `open etdiol.cs.sum` to view summary
-* `open pentan.cs.CSV` to view conformation energies. To calculate relative energies, subtract lowest energy conformer from each energy
+* `open pentan.cs.CSV` to view conformation energies (`AA`, `AG`, `G+G+`, `G+G-`)
+
+To calculate relative energies, subtract lowest energy conformer from each energy
 
 ### Dihedral Drive (dihdrive)
 
