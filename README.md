@@ -17,11 +17,12 @@ Find conformations of a molecule
 
 Find energy differences with changes in the dihedral angle in a molecule. 
 
-* `d1` = main dihedral atom, `d2`, `d3`, `d4` = other dihedral atoms
+* `d1` = main atom associated with dihedral
 
 1. `cd ~/boss/molecules/small` (or any other folder containing your molecule)
 2. `cp nitrob.z dihzmat`
 3. `open dihzmat`
+4. Determine `d2`, `d3`, `d4` as the atoms on the same line as `d1`
 5. Remove `d1` from range under `Variable Dihedrals follow`
 6. Make new line under `Additional Dihedrals follow`
 7. Insert <pre>`d1d2d3d4  -1  -1`</pre> e.g. line should read <pre>`0015009004003  -1  -1`</pre> Take note of the double spaces.
