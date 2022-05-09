@@ -17,21 +17,20 @@ Find conformations of a molecule
 
 ## Goal 
 
-???
+Find energy differences with changes in the dihedral angle in a molecule. 
  
 ## Steps
 
-0. Go to a folder with molecules, e.g. `cd ~/boss/molecules/small`
-1. Choose a molecule, e.g. nitrobenzene. Find its abbreviation, e.g. `nitrob`.
+1. `cd ~/boss/molecules/small`
 2. `cp nitrob.z dihzmat`
-3. Open the file `dihzmat`
+3. `open dihzmat`
 4. Identify the atom associated with the dihedral angle you care about. Call this atom index `d` e.g. `0015`
 5. Remove `d` from the range under `Variable Dihedrals follow`, and add it under `Additional Dihedrals follow` above `AUTO`
 6. Add to `d` the rest of the atoms that make up the dihedral, and then append `  -1  -1` to it, e.g. `0015009004003  -1  -1`
-7. Save and close the file. 
-8. Open the file `dih.bat` or `dih.cmd`
-9. Change the line `set ATOM=00015` with the correct atom number `d` from above.
-10. Change the line `set LAMBDA= 10.000...` with your desired angle increment
-11. Save and close the file
-12. Run the command `dih`
-13. Open `dih.csv` to view the energies
+7. Save and close
+8. `open dih.bat` or `open dih.cmd`
+9. Change `set ATOM=00015` to atom `d` from above
+10. Change `set LAMBDA= 10.000...` with desired angle increment
+11. Save and close
+12. `dih`
+13. `open dih.csv`
