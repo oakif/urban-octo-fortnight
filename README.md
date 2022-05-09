@@ -24,7 +24,7 @@ Find energy differences with changes in the dihedral angle in a molecule.
 3. `open dihzmat`
 5. Remove `d1` from range under `Variable Dihedrals follow`
 6. Make new line under `Additional Dihedrals follow`
-7. Insert `d1d2d3d4  -1  -1` (e.g. line should read `0015009004003  -1  -1`)
+7. Insert `d1d2d3d4  -1  -1` (e.g. line should read `0015009004003  -1  -1`). NOTE the double spaces.
 8. Save and close
 9. `open dih.bat` or `open dihcmd`
 10. Change `set ATOM=00015` to atom `d` from above
