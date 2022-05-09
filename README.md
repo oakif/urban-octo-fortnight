@@ -1,25 +1,25 @@
 * optimize, dihdrive, consearch, MCgas, MCGBSA, and linres.
 
-# Conformational Search (consearch)
+## Conformational Search (consearch)
 
-## Goal
+**Goal**
 
 Find conformations of a molecule
 
-## Steps
+**Steps**
 
 1. Choose a molecule such as `pentan`
 2. Type in `xCS100 pentan`
 3. Open the CSV file called `pentan.cs.CSV` to view all conformations
 4. To calculate relative energies, subtract all conformational energies by the lowest energy conformer
 
-# Dihedral Drive (dihdrive)
+## Dihedral Drive (dihdrive)
 
-## Goal 
+**Goal**
 
 Find energy differences with changes in the dihedral angle in a molecule. 
  
-## Steps
+**Steps**
 
 1. `cd ~/boss/molecules/small`
 2. `cp nitrob.z dihzmat`
